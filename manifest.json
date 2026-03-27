@@ -1,0 +1,17 @@
+{
+  "Name": "A Tale of Two Farmers",
+  "Author": "CaptainBrando",
+  "Version": "1.0.0",
+  "Description": "A custom anniversary quest for my wife.",
+  "UniqueID": "CaptainBrando.AnniversaryQuest",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "IsRequired": true
+    }
+  ]
+}

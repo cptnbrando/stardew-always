@@ -1,0 +1,55 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "579": {
+                    "Name": "Squeaky Bone",
+                    "DisplayName": "Squeaky Bone",
+                    "Description": "You found a strange bone, it appears hollow. Give it to an expert.",
+                    "Type": "Quest",
+                    "Category": -999,
+                    "Texture": "assets/squeaky_bone.png"
+                }
+            },
+            "When": {
+                "HasFlag": "{{!FinishedAnniversaryQuest}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "YourName.Anniversary_SpawnBone": {
+                    "Id": "YourName.Anniversary_SpawnBone",
+                    "Trigger": "Location_TallyFeature",
+                    "Condition": "LOCATION_NAME CurrentPlayer Quarry, !PLAYER_HAS_FLAG CurrentPlayer FoundTheBone",
+                    "Actions": [
+                        "SpawnObject (O)579 1 {{AbsolutePlayerX}} {{AbsolutePlayerY}}",
+                        "AddMail CurrentPlayer FoundTheBone",
+                        "AddQuest AnniversaryQuest_1"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries": {
+                "AnniversaryQuest_1": {
+                    "Type": "Basic",
+                    "Id": "AnniversaryQuest_1",
+                    "Title": "Something Buried",
+                    "Description": "You found a strange bone, it appears hollow. Give it to an expert.",
+                    "Objective": "Give the strange bone to Gunther at the Museum.",
+                    "NextQuests": [
+                        "AnniversaryQuest_2"
+                    ],
+                    "CanBeCancelled": false
+                }
+            }
+        }
+    ]
+}
