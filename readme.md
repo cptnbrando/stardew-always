@@ -1,6 +1,6 @@
 # Stardew Always
 
-![Doggy](design-docs/doggy.gif)
+<img src="design-docs/doggy.gif" width="200" height="200" />
 
 An anniversary gift for my wife, adding our dog to Stardew Valley.
 
