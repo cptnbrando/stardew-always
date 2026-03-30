@@ -44,4 +44,4 @@ The mod replaces the Dog 1, so if your farm uses Dog 2 or 3, edit the content.js
 ],
 ```
 
-The same goes for the headshot. In the content.json you will see only one entry to replace dog 1. If you want to replace the others dogs, change that entry accordingly. This will replace the icon in the new farm menu.
+The same goes for the headshot. In the content.json you will see only one entry to replace dog 1. If you want to replace the others dogs, change that entry according to the pixel values found at the bottom of [this page](https://stardewvalleywiki.com/Modding:Content_Patcher). This will replace the icon in the new farm menu.
