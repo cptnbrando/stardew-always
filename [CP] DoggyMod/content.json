@@ -5,6 +5,23 @@
             "Action": "EditImage",
             "Target": "Animals/dog",
             "FromFile": "assets/doggy-tilesheet.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/doggy-headshot.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 208,
+                "Y": 208,
+                "Width": 16,
+                "Height": 16
+            }
         }
     ]
 }
