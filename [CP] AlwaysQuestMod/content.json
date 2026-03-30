@@ -1,0 +1,61 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Comment": "Visual swap for the Baseball Bobber",
+            "Target": "TileSheets/Objects",
+            "FromFile": "assets/hollow-bone.png",
+            "ToArea": {
+                "X": 304,
+                "Y": 496,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "803": {
+                    "Name": "Hollow Bone",
+                    "DisplayName": "Hollow Bone",
+                    "Description": "A weathered bone that whistles in the wind.",
+                    "Type": "Basic",
+                    "Category": -8,
+                    "Price": 0,
+                    "ContextTags": [
+                        "quest_item"
+                    ],
+                    "CustomFields": {
+                        "Pathoschild.ContentPatcher/TriggerQuest": "Brando.DogQuest"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [
+                "Mountain",
+                "Forage"
+            ],
+            "Entries": {
+                "Brando.HollowBoneForage": {
+                    "Id": "Brando.HollowBoneForage",
+                    "ItemId": "(O)803",
+                    "Chance": 100.0,
+                    "Condition": "LOCATION_NAME Current Quarry, !HasQuest CurrentHost Brando.DogQuest",
+                    "Precedence": -1
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries": {
+                "Brando.DogQuest": "Basic/A Mysterious Discovery/You found a strange, whistling bone in the Quarry. Gunther at the Museum might know more about its origin./Bring the bone to Gunther./-1/-1/true"
+            }
+        }
+    ]
+}

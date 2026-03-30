@@ -1,0 +1,17 @@
+{
+    "Name": "AlwaysQuestMod",
+    "Author": "CaptainBrando",
+    "Version": "1.0.0",
+    "Description": "An anniversary quest for my wife.",
+    "UniqueID": "CaptainBrando.AlwaysQuestMod",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "Pathoschild.ContentPatcher",
+            "IsRequired": true
+        }
+    ]
+}
