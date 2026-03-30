@@ -1,9 +1,9 @@
 {
-  "Name": "A Tale of Two Farmers",
+  "Name": "DoggyMod",
   "Author": "CaptainBrando",
   "Version": "1.0.0",
-  "Description": "A custom anniversary quest for my wife.",
-  "UniqueID": "CaptainBrando.AnniversaryQuest",
+  "Description": "A way to add my dog to Stardew Valley.",
+  "UniqueID": "CaptainBrando.DoggyMod",
   "UpdateKeys": [],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
