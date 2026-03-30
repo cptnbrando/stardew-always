@@ -17,6 +17,7 @@ An anniversary gift for my wife, adding our dog to Stardew Valley. Also adds a c
 
 If you want to add your dog to Stardew Valley, you'll need the very simple mod [CP] DoggyMod from this repo, and a custom tilesheet for your dog. Copy in your tilesheet as assets/doggy-tilesheet.png and then copy the folder into the Mods directory in the game folder. Then run with Vortex. The mod replaces the Dog 1, so if your farm uses Dog 2 or 3, edit the content.json file with the line "Target": "Animals/dog", . Change this to "Target": "Animals/dog2", or "Target": "Animals/dog3", for whichever dog you chose for your farm. You can also duplicate the block entirely and do it for all the dogs for the future like
 
+```
 "Format": "2.0.0",
 "Changes": [
     {
@@ -36,3 +37,4 @@ If you want to add your dog to Stardew Valley, you'll need the very simple mod [
     }
     ...
 ],
+```
